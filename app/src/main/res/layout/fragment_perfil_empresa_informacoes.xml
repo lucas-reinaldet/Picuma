@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentPerfilEmpresaInformacoes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivImagemLogoPerfilEmpresaInformacoes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tam_padrao_height_imagem_perfil_empresa"
+                android:maxWidth="@dimen/tam_max_padrao_width_imagem_perfil_empresa"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibTrocarLogoPerfilEmpresaInformacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/branco_semi_transparente"
+                android:padding="@dimen/tam_5dp"
+                android:src="@drawable/ic_camera"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/tam_10dp"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNomePerfilEmpresaInformacoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_nome_empresa_perfil_visualizacao"
+                    android:textStyle="italic|bold" />
+
+                <ImageButton
+                    android:id="@+id/ibEditarNomePublicoAlvoPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/branco_semi_transparente"
+                    android:padding="@dimen/tam_5dp"
+                    android:src="@drawable/ic_editar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_5dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvPublicoAlvoPerfilEmpresaInformacoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+                <TextView
+                    android:id="@+id/tvCpfCnpjPerfilEmpresaInformacoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/tam_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area_atuacao_visualizar_empresa"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAreaAtuacaoPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tam_5dp"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+            </LinearLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/sobre_nos_visualizar_empresa"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/ibEditarDescricaoPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/branco_semi_transparente"
+                    android:padding="@dimen/tam_5dp"
+                    android:src="@drawable/ic_editar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvDescricaoPerfilEmpresaInformacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_14sp"
+                android:textStyle="italic" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/listaContato"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp"
+                    android:textStyle="italic|bold" />
+
+                <ImageButton
+                    android:id="@+id/ibAdicionarContatoPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/branco_semi_transparente"
+                    android:padding="@dimen/tam_5dp"
+                    android:src="@drawable/ic_contato_plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </android.support.constraint.ConstraintLayout>
+
+            <faculdade.br.picuma.util.NonScrollListView
+                android:id="@+id/lvListaContatoPerfilEmpresaInformacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"></faculdade.br.picuma.util.NonScrollListView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/horario_atendimento"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp"
+                    android:textStyle="italic|bold" />
+
+                <ImageButton
+                    android:id="@+id/ibAdicionarHorarioPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/branco_semi_transparente"
+                    android:padding="@dimen/tam_5dp"
+                    android:src="@drawable/ic_calendario_plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <faculdade.br.picuma.util.NonScrollListView
+                android:id="@+id/lvListaHorarioPerfilEmpresaInformacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"></faculdade.br.picuma.util.NonScrollListView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/endereco"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp"
+                    android:textStyle="bold|italic" />
+                />
+
+                <ImageButton
+                    android:id="@+id/ibEditarEnderecoPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/branco_semi_transparente"
+                    android:padding="@dimen/tam_5dp"
+                    android:src="@drawable/ic_editar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEnderecoLogradouroPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tam_10dp"
+                    android:layout_marginRight="@dimen/tam_10dp"
+                    android:text="-"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+                <TextView
+                    android:id="@+id/tvEnderecoNumeroPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/tam_5dp"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEnderecoComplementoPerfilEmpresaInformacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center_horizontal"
+                android:textColor="@color/preto"
+                android:textSize="0sp" />
+
+            <TextView
+                android:id="@+id/tvEnderecoBairroPerfilEmpresaInformacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvEnderecoCidadePerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tam_10dp"
+                    android:layout_marginRight="@dimen/tam_10dp"
+                    android:text="-"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+
+                <TextView
+                    android:id="@+id/tvEnderecoEstadoPerfilEmpresaInformacoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/tam_5dp"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fragmentMapaPerfilEmpresaInformacoes"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tam_fragment_mapa_visualizacao_empresa" />
+    </LinearLayout>
+</ScrollView>

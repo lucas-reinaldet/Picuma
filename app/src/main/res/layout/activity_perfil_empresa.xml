@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PerfilEmpresaActivity"
+    android:id="@+id/drawerPerfilEmpresa">
+
+    <LinearLayout
+        android:id="@+id/llCorpoPerfilEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorAccent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayoutPerfilEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/preto"
+                app:tabSelectedTextColor="@color/branco"
+                app:tabTextColor="@color/branco"></android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/content_perfil_empresa"></include>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationViewPerfilEmpresa"
+        app:headerLayout="@layout/nav_header_perfil_empresa"
+        app:elevation="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/darkGrey"
+        app:itemTextColor="@color/preto"
+        app:itemIconTint="@color/preto"
+        app:menu="@menu/menu_drawer_perfil_empresa"
+        android:layout_gravity="start"
+        >
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

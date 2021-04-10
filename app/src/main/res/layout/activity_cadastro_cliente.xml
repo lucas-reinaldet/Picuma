@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="faculdade.br.picuma.view.CadastroClienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margem_end_padrao_cadastro"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btAdicionarImagemCadastroCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/adicionar_imagem_cadastro_cliente"
+                    android:textAllCaps="false"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivApresentacaoPreviaFotoCadastroCliente"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/margem_20dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                android:text="@string/nome_completo_cadastro"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etNomeClienteCadastroCliente"
+                android:layout_width="@dimen/tam_edit_texto_cadastro"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_top_padrao"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/data_nascimento_cadastro"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <EditText
+                    android:id="@+id/etDataNascimentoCadastroCliente"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_calendar_check"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_top_padrao"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cpf_cadastro"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <EditText
+                    android:id="@+id/etCpfCadastroCliente"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo_cadastro"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro"
+                android:layout_marginTop="@dimen/margem_top_padrao_cadastro"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/rbFemininoCadastroCliente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/feminino"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rbMasculinoCadastroCliente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/masculino"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btAdicionarContatoCadastroCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                android:text="@string/adicionar_contato_cadastro"
+                android:textAllCaps="false" />
+
+
+            <faculdade.br.picuma.util.NonScrollListView
+                android:id="@+id/lvListaContatoCadastroCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></faculdade.br.picuma.util.NonScrollListView>
+
+            <TextView
+                android:id="@+id/tvUsuarioCadastroCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_top_padrao"
+                android:text="@string/usuario_cadastro"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etUsuarioCadastroCliente"
+                android:layout_width="@dimen/tam_edit_texto_cadastro"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <TextView
+                android:id="@+id/tvSenhaCadastroCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_top_padrao"
+                android:text="@string/senha_cadastro"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etSenhaCadastroCliente"
+                android:layout_width="@dimen/tam_edit_texto_cadastro"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etLoginGoogleCadastroCliente"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clickable="false"
+                android:focusable="false" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margem_20dp"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btCancelarCadastroCliente"
+                android:layout_width="@dimen/tam_padrao_button_cadastro"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margem_20dp"
+                android:text="@string/texto_button_cancelar"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btCadastrarCliente"
+                android:layout_width="@dimen/tam_padrao_button_cadastro"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margem_20dp"
+                android:text="@string/texto_button_cadastrar"
+                android:textAllCaps="false"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+
+

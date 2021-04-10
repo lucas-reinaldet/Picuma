@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margem_padrao_cadastro"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margem_20dp"
+        android:paddingLeft="@dimen/tam_10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/servico_escolhido"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvDialogServicoEscolhidoAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tam_10dp"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_texto_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDialogDadosApresentadosFuncionarioAgendamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tam_10dp"
+        android:gravity="center_horizontal">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/profissional_escolhido"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvDialogFuncionarioEscolhidoAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/tam_10dp"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_texto_14sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivFotoProfissionalEscolhidoAgendamento"
+            android:layout_width="@dimen/tam_40dp"
+            android:layout_height="@dimen/tam_40dp"
+            android:layout_marginLeft="@dimen/tam_10dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tam_10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textColor="@color/preto"
+            android:text="@string/data_agendanda"
+            android:layout_gravity="center_vertical"/>
+
+
+        <EditText
+            android:id="@+id/etDialogDataEscolhidaAgendamento"
+            android:layout_width="@dimen/tam_edit_texto_data_agendamento"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_14sp"
+            android:textColor="@color/preto"
+            android:layout_marginLeft="@dimen/tam_10dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tam_texto_16sp"
+        android:textColor="@color/preto"
+        android:text="@string/tempo_aproximado_servico"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/tam_10dp"
+        android:paddingLeft="@dimen/tam_10dp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tam_10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textColor="@color/preto"
+            android:text="@string/das"
+            android:layout_gravity="center_vertical"/>
+
+
+        <EditText
+            android:id="@+id/etDialogHorarioEscolhidaAgendamento"
+            android:layout_width="@dimen/tam_edit_texto_data_agendamento"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_14sp"
+            android:textColor="@color/preto"
+            android:layout_marginLeft="@dimen/tam_10dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textColor="@color/preto"
+            android:text="@string/ate"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginLeft="@dimen/tam_10dp"/>
+
+
+        <EditText
+            android:id="@+id/etDialogHorarioTerminoAgendamento"
+            android:layout_width="@dimen/tam_edit_texto_data_agendamento"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_14sp"
+            android:textColor="@color/preto"
+            android:layout_marginLeft="@dimen/tam_10dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textColor="@color/preto"
+            android:text="@string/a_partir_money"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvDialogCustoAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textColor="@color/preto"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btDialogCancelarCadastroAgendamento"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_cancelar"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/margem_20dp"
+            android:layout_marginTop="@dimen/margem_20dp"
+            android:layout_marginBottom="@dimen/margem_20dp"/>
+
+        <Button
+            android:id="@+id/btDialogAgendarCadastroAgendamento"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_agendar"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/margem_20dp"
+            android:layout_marginTop="@dimen/margem_20dp"
+            android:layout_marginBottom="@dimen/margem_20dp"/>
+
+    </LinearLayout>
+</LinearLayout>

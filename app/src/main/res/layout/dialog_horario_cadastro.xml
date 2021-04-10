@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_margin="@dimen/margem_padrao_cadastro"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+            android:text="@string/horario_cadastro_empresa"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+            android:text="@string/expediente_cadastro"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/tam_10dp"
+            android:paddingRight="@dimen/tam_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inicio"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etDialogHorarioInicioExpedienteEmpresa"
+                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fim"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etDialogHorarioFimExpedienteEmpresa"
+                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                android:clickable="false"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intervalo_cadastro_empresa"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/tam_10dp"
+            android:paddingRight="@dimen/tam_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inicio"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etDialogHorarioInicioIntervaloEmpresa"
+                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fim"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etDialogHorarioFimIntervaloEmpresa"
+                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                android:clickable="false"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAtribuirHorarioAoDomingoEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <RadioButton
+                android:id="@+id/rbAtribuirHorarioAoSegundaEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="S"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <RadioButton
+                android:id="@+id/rbAtribuirHorarioAoTercaEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="T"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <RadioButton
+                android:id="@+id/rbAtribuirHorarioAoQuartaEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Q"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <RadioButton
+                android:id="@+id/rbAtribuirHorarioAoQuintaEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Q"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+            <RadioButton
+                android:id="@+id/rbAtribuirHorarioAoSextaEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="S"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <RadioButton
+                android:id="@+id/rbAtribuirHorarioAoSabadoEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="S"
+                android:textSize="@dimen/tam_padrao_text_cadastro"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tam_10dp"
+        android:layout_marginBottom="@dimen/margem_20dp">
+
+        <Button
+            android:id="@+id/btDialogCadastrarHorarioCancelar"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_cancelar"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/margem_20dp"/>
+
+        <Button
+            android:id="@+id/btDialogCadastrarHorarioAlterar"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_concluir"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/margem_20dp"/>
+
+    </LinearLayout>
+</LinearLayout>

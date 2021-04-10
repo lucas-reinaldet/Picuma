@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navAgendamentoPerfilCliente"
+            android:icon="@drawable/ic_agenda"
+            android:title="@string/nav_agendametos" />
+        <item
+            android:id="@+id/navFavoritos"
+            android:icon="@drawable/ic_favorito_true"
+            android:title="@string/nav_favoritos" />
+
+        <item
+            android:id="@+id/navLogOutPerfilCliente"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/nav_log_out" />
+    </group>
+
+</menu>

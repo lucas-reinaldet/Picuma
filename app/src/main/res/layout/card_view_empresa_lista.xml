@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lista_empresa_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/radius_card_view"
+    app:cardElevation="@dimen/elevation_card_view"
+    android:clickable="true"
+    android:layout_margin="@dimen/tam_5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewListaEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tam_padrao_height_imagem_perfil_empresa"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvNomeListaEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewListaEmpresa"
+            android:paddingLeft="@dimen/tam_5dp"
+            android:paddingTop="@dimen/tam_5dp"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_title_cardView"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvEnderecoListaEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNomeListaEmpresa"
+            android:paddingBottom="@dimen/tam_10dp"
+            android:paddingLeft="@dimen/tam_10dp"
+            android:textColor="@color/cinza"
+            android:textSize="@dimen/tam_subtitle_cardView" />
+
+        <ImageButton
+            android:id="@+id/ibFavoritoListaEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorito_false"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvNomeListaEmpresa"
+            android:layout_marginEnd="@dimen/tam_10dp"
+            android:layout_marginBottom="@dimen/tam_10dp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+

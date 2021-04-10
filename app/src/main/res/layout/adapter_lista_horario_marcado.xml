@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/tam_10dp"
+    android:orientation="vertical"
+    app:layout_constraintCircleRadius="@dimen/tam_10dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/tam_10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivAdapterFotoHorarioMarcado"
+                android:layout_width="@dimen/tam_45dp"
+                android:layout_height="@dimen/tam_45dp" />
+
+            <TextView
+                android:id="@+id/tvAdapterNomeHorarioMarcado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAdapterServicoHorarioMarcado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tam_10dp"
+            android:gravity="center"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_texto_18sp"
+            android:textStyle="italic" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tam_5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:text="@string/dia"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdapterDataHorarioMarcado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:text="@string/das"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdapterHorarioInicioHorarioMarcado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:text="@string/ate_as"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdapterHorarioFimHorarioMarcado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tam_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tvAdapterStatusHorarioMarcado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/tam_texto_16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

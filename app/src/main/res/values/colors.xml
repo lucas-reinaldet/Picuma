@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b71c1c</color>
+    <color name="colorPrimaryDark">#9c0000</color>
+    <color name="colorAccent">#f05545</color>
+    <color name="colorPrimaryDarkEnfase">#550000</color>
+
+
+    <color name="preto">#000000</color>
+    <color name="cor_padrao_telas">#EEEEEE</color>
+    <color name="vermelho">#F80000</color>
+    <color name="cor_button_voltar_cancelar">#FF6347</color>
+    <color name="cor_button_confirmar_avancar">#00FF7F</color>
+    <color name="cinza">#8f8f8f8f</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="darkGrey">#FAFAFA</color>
+    <color name="rose">#FFCDD2</color>
+    <color name="verde_claro">#00FF7F</color>
+    <color name="rose1">#f4dada</color>
+    <color name="branco_semi_transparente">#80FFFFFF</color>
+</resources>

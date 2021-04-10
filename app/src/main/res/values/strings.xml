@@ -1,0 +1,186 @@
+<resources>
+
+    <string name="key">AIzaSyDwEotAxxtrzK1tqExi4TiVMgizH6fqe2k</string>
+    <string name="id_cliente">519028755694-i7kd3vno13uao632h8o2k90nobp9ef90.apps.googleusercontent.com</string>
+
+    <string name="app_name">Picumã</string>
+    <string name="usuario">Usuario:</string>
+    <string name="senha">Senha:</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar">Cadastro</string>
+    <string name="opcao_cliente">Gostaria de ser um cliente</string>
+    <string name="ou">ou</string>
+    <string name="opcao_empresa">Gostaria de ser uma empresa</string>
+    <string name="texto_button_voltar">Voltar</string>
+    <string name="texto_button_proximo">Proximo</string>
+
+
+    <string name="nome_completo_cadastro">Nome completo:*</string>
+    <string name="data_nascimento_cadastro">Data de nascimento:*</string>
+    <string name="cpf_cadastro">CPF:*</string>
+    <string name="texto_button_cancelar">Cancelar</string>
+    <string name="texto_button_cadastrar">Cadastrar</string>
+    <string name="nav_agendametos">Agendamentos</string>
+    <string name="nav_favoritos">Favoritos</string>
+    <string name="nav_configuracoes">Configurações</string>
+    <string name="nav_sair_app">Sair do APP</string>
+    <string name="nav_log_out">LogOut</string>
+    <string name="opem">Opem</string>
+    <string name="close">Close</string>
+
+
+    <string-array name="title_tab_perfil_cliente">
+
+        <item>Categorias</item>
+        <item>Mapa</item>
+        <item>Empresas</item>
+
+    </string-array>
+
+    <string-array name="title_tab_visualizar_perfil_empresa">
+
+        <item>Perfil</item>
+        <item>Serviços</item>
+        <item>Galeria</item>
+        <item>Classificação</item>
+
+    </string-array>
+
+    <string-array name="title_tab_perfil_empresa">
+
+        <item>Perfil</item>
+        <item>Funcionários</item>
+        <item>Serviços</item>
+        <item>Galeria</item>
+        <item>Classificação</item>
+
+    </string-array>
+
+    <string-array name="title_tab_cadastro_perfil_empresa">
+
+        <item>Dados</item>
+        <item>Contato</item>
+        <item>Horario</item>
+        <item>Funcionario</item>
+        <item>Servicos</item>
+
+    </string-array>
+
+    <string-array name="tipo_contato">
+
+        <item>Celular</item>
+        <item>Fixo</item>
+        <item>E-mail</item>
+
+    </string-array>
+
+    <string-array name="title_tab_agendamentos">
+
+        <item>Solicitações</item>
+        <item>Confirmados</item>
+        <item>Recusados</item>
+        <item>Realizados</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto_escolha_cadastro_empresa">Sou uma empresa!</string>
+    <string name="texto_escolha_cadastro_cliente">Sou um cliente!</string>
+    <string name="usuario_cadastro">Usuario:*</string>
+    <string name="senha_cadastro">Senha:*</string>
+    <string name="adicionar_imagem_cadastro_cliente">Adicionar foto</string>
+    <string name="telefone_cadastro">Telefone:*</string>
+    <string name="email_cadastro">E-mail:</string>
+    <string name="nome_empresa_cadastro">Nome da empresa:*</string>
+    <string name="cnpj_empresa_cadastro">CNPJ</string>
+    <string name="cpf_empresa_cadastro">CPF:*</string>
+    <string name="logo_empresa_cadastro">Logo da empresa:</string>
+    <string name="atribuir_a_todos">Atribuir a todos</string>
+    <string name="terca_feira">Terça-Feira</string>
+    <string name="quarta_feira">Quarta-Feira</string>
+    <string name="quinta_feira">Quinta-Feira</string>
+    <string name="sexta_feira">Sexta-Feira</string>
+    <string name="sabado">Sábado</string>
+    <string name="domingo">Domingo</string>
+    <string name="segunda_feira">Segunda-Feira</string>
+    <string name="adicionar_horario_de_almoco">Horário de Almoço</string>
+    <string name="expediente_cadastro">Expediente*</string>
+    <string name="inicio">Inicio:</string>
+    <string name="fim">Fim:</string>
+    <string name="intervalo_cadastro_empresa">Intervalo</string>
+    <string name="horario_cadastro_empresa">Horario de funcionamento</string>
+    <string name="atribuir_individualmente">Atribuir individualmente</string>
+    <string name="listaContato">Contato</string>
+    <string name="adicionar_contato_cadastro">Adicionar Contato</string>
+    <string name="texto_button_cadastrar_mais_um">Cadastrar e Add+1</string>
+    <string name="texto_button_mais_um">Adicionar +1</string>
+    <string name="texto_button_topo_dados_cadastro_empresa">Dados</string>
+    <string name="texto_button_topo_contato_cadastro_empresa">Contato</string>
+    <string name="texto_button_topo_horario_cadastro_empresa">Horario</string>
+    <string name="texto_button_topo_funcionario_cadastro_empresa">Funcionário</string>
+    <string name="adicionar_funcionario_cadastro">Adicionar funcionário</string>
+    <string name="nome_funcionario_cadastro">Nome Funcionário*</string>
+    <string name="profissional">Profissional</string>
+    <string name="area_atuacao_cadastro_empresa">Área de atuação:*</string>
+    <string name="cep_cadastro">Cep:*</string>
+    <string name="logradouro_cadastro">Logradouro:</string>
+    <string name="complemento_cadastro">Complemento:</string>
+    <string name="bairro_cadastro">Bairro:</string>
+    <string name="numero_cadastro">Numero:*</string>
+    <string name="cidade_cadastro">Cidade:</string>
+    <string name="sexo_cadastro">Sexo:*</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="publico_alvo">Público alvo:*</string>
+    <string name="unissex">Unissex</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="expediente">Expediente:</string>
+    <string name="intervalo">Intervalo: </string>
+    <string name="area_atuacao_visualizar_empresa">Área de atuação:</string>
+    <string name="sobre_nos_visualizar_empresa">Um pouco sobre nós:</string>
+    <string name="antes_depois_foto_galeria"><![CDATA[Antes & Depois]]></string>
+    <string name="tempo_media_de">Tempo médio de</string>
+    <string name="minutos">Minutos</string>
+    <string name="a_partir_r">A partir de: R$</string>
+    <string name="act_agendar">Agendar</string>
+    <string name="agendamento">Agendamento</string>
+    <string name="escolher_servico">Escolher serviço</string>
+    <string name="escolher_profissional_servico">Escolha o profissional para os serviços escolhidos</string>
+    <string name="escolher_data_agendamento">Escolha a data:* </string>
+    <string name="escolher_horario_agendamento">Escolha o horário:* </string>
+    <string name="texto_button_agendar">Agendar</string>
+    <string name="servico">Serviço</string>
+    <string name="texto_button_concluir">Concluir</string>
+    <string name="servico_escolhido">Serviço Escolhido:</string>
+    <string name="profissional_escolhido">Profissional escolhido:</string>
+    <string name="horario_escolhido">Horário:</string>
+    <string name="tempo_aproximado_servico">Tempo aproximado de serviço</string>
+    <string name="das">Das:</string>
+    <string name="ate">Até:</string>
+    <string name="a_partir_money">A partir de: R$</string>
+    <string name="data_agendanda">Data:</string>
+    <string name="nav_sobre">Sobre</string>
+    <string name="endereco">Endereço</string>
+    <string name="horario_atendimento">Horário de Atendimento</string>
+    <string name="grupo_servico">Grupo serviço</string>
+    <string name="escolha_servico">Serviço</string>
+    <string name="tempo_servico">Tempo aproximado</string>
+    <string name="min">min.</string>
+    <string name="valor_a_partir">A partir de: R$</string>
+    <string name="descricao_servico">Descrição do serviço</string>
+    <string name="texto_button_associar_funcionario">Associar Funcionário ao Serviço</string>
+    <string name="funcionario">Funcionário</string>
+    <string name="antes">Antes</string>
+    <string name="depois">Depois</string>
+    <string name="ate_as">ate as</string>
+    <string name="dia">Dia</string>
+    <string name="contato_dialog">Contato:</string>
+    <string name="texto_button_confirmar">Confirmar</string>
+    <string name="texto_button_recusar">Recusar</string>
+    <string name="texto_button_realizado">Realizado</string>
+    <string name="texto_button_fechar">Fechar</string>
+    <string name="status">Status:</string>
+    <string name="area_atuacao">Área de atuação:</string>
+    <string name="comentario">Comentário</string>
+</resources>

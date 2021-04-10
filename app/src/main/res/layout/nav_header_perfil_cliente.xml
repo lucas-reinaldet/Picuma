@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:id="@+id/headerNavDrawerPerfilCliente"
+    android:clickable="true"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivViewClientePerfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tvNomeClientePerfilCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Nome Usuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/tam_padrao_nome_cliente_perfil"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

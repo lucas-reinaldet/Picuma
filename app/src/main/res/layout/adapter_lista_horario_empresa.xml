@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tam_5dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/etDiaSemanaVisualizarPerfilEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:textStyle="bold|italic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tam_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expediente"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+            <EditText
+                android:id="@+id/etHorarioInicioExpedienteVisualizarPerfilEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="@dimen/tam_padrao_text_cadastro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:text="-"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etHorarioFimExpedienteVisualizarPerfilEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="@dimen/tam_padrao_text_cadastro"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHorarioIntervaloVisualizarPerfilEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/tam_5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intervalo"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etHorarioInicioIntervaloVisualizarPerfilEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="@dimen/tam_padrao_text_cadastro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:text="-"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etHorarioFimIntervaloVisualizarPerfilEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="@dimen/tam_padrao_text_cadastro"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

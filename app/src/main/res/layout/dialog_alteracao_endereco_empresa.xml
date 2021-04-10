@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_margin="@dimen/margem_padrao_cadastro"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margem_20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/tam_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cep_cadastro"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etDialogAlteracaoCepEmpresa"
+                android:layout_width="@dimen/tam_edit_texto_cadastro_cep"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tam_5dp"
+                android:text="@string/numero_cadastro"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etDialogAlteracaoNumeroEmpresa"
+                android:layout_width="@dimen/tam_edit_texto_cadastro_cep"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+            android:text="@string/logradouro_cadastro"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+        <EditText
+            android:id="@+id/etDialogAlteracaoLogradouroEmpresa"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro"
+            android:layout_marginRight="@dimen/tam_10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+            android:text="@string/complemento_cadastro"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+        <EditText
+            android:id="@+id/etComplementoCadastroEmpresa"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+            android:text="@string/bairro_cadastro"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+        <EditText
+            android:id="@+id/etDialogAlteracaoBairroEmpresa"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/preto"
+            android:textSize="@dimen/tam_padrao_text_cadastro"
+            android:layout_marginRight="@dimen/tam_10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tam_10dp"
+            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cidade_cadastro"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <EditText
+                android:id="@+id/etDialogAlteracaoCidadeEmpresa"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+            <EditText
+                android:id="@+id/etDialogAlteracaoEstadoEmpresa"
+                android:layout_width="@dimen/tam_edit_texto_estado"
+                android:layout_height="wrap_content"
+                android:hint="UF"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tam_10dp"
+        android:layout_marginBottom="@dimen/margem_20dp">
+
+        <Button
+            android:id="@+id/btDialogAlteracaoEnderecoCancelar"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_cancelar"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/margem_20dp"/>
+
+        <Button
+            android:id="@+id/btDialogAlteracaoEnderecoAlterar"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_concluir"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/margem_20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

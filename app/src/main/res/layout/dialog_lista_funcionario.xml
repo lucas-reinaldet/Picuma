@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <EditText
+        android:id="@+id/etDialogProcuraFuncionario"
+        android:layout_width="@dimen/tam_300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tam_10dp"
+        android:layout_marginTop="@dimen/margem_20dp"
+        android:hint="@string/funcionario" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="9">
+
+        <faculdade.br.picuma.util.NonScrollListView
+            android:id="@+id/lvDialogListaFuncionario"
+            android:layout_width="@dimen/tam_340dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"></faculdade.br.picuma.util.NonScrollListView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btDialogCancelarListaFuncionario"
+        android:layout_width="@dimen/tam_300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tam_10dp"
+        android:layout_marginTop="@dimen/tam_10dp"
+        android:text="@string/texto_button_cancelar"
+        android:textAllCaps="false"
+        android:layout_gravity="center"/>
+</LinearLayout>

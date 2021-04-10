@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_margin="@dimen/margem_padrao_cadastro"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etDialogAlteracaoDescricaoPerfilEmpresa"
+        android:layout_width="@dimen/tam_300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margem_20dp"
+        android:lines="4"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tam_10dp"
+        android:layout_marginBottom="@dimen/margem_20dp">
+
+        <Button
+            android:id="@+id/btDialogAlteracaoDescricaoCancelar"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_cancelar"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/margem_20dp"/>
+
+        <Button
+            android:id="@+id/btDialogAlteracaoDescricaoAlterar"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_concluir"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/margem_20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

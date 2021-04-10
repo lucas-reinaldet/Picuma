@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usuario"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_login"
+                android:layout_marginTop="@dimen/margem_70dp"/>
+
+            <EditText
+                android:id="@+id/etUsuarioLogin"
+                android:layout_width="@dimen/tam_edit_texto_login"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tam_padrao_text_login"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/senha"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_login" />
+
+            <EditText
+                android:id="@+id/etSenhaLogin"
+                android:layout_width="@dimen/tam_edit_texto_login"
+                android:layout_height="wrap_content"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_padrao_text_login"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btLogar"
+                android:layout_width="@dimen/tam_button_login"
+                android:layout_height="wrap_content"
+                android:text="@string/entrar"
+                android:textAllCaps="false"
+                android:textColor="@color/preto" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="@dimen/tam_button_login"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:id="@+id/btCadastrarUuario"
+                android:layout_width="@dimen/tam_button_login"
+                android:layout_height="wrap_content"
+                android:textColor="@color/preto"
+                android:text="@string/cadastrar"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/margem_top_padrao"
+                android:layout_marginBottom="@dimen/margem_20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

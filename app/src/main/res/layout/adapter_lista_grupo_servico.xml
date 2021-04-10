@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivAdapterImagemListaGrupoServico"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAdapterListaGrupoServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Texto de teste"
+        android:textAlignment="center"
+        android:textSize="@dimen/tam_padrao_text_lista_grupo_servico"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/ivAdapterImagemListaGrupoServico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAdapterImagemListaGrupoServico"
+        app:layout_constraintVertical_bias="0.621"
+        android:textColor="@color/preto"
+        android:background="@color/branco_semi_transparente"/>
+
+</android.support.constraint.ConstraintLayout>

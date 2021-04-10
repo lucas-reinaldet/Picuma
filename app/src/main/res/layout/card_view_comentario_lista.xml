@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lista_comentario_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tam_5dp"
+    app:cardCornerRadius="@dimen/radius_card_view"
+    app:cardElevation="@dimen/elevation_card_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rose1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margem_bottom_comentario_topo"
+            android:layout_marginLeft="@dimen/tam_5dp"
+            android:layout_marginRight="@dimen/tam_5dp"
+            android:layout_marginTop="@dimen/tam_10dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="4.9">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivFotoPerfilClienteComentarioEmpresa"
+                    android:layout_width="@dimen/tam_40dp"
+                    android:layout_height="@dimen/tam_40dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tvNomeClienteComentarioEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/tam_10dp"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_nome_comentario" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/ibDenunciaComentarioEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/ic_alert"
+                android:background="@android:color/transparent"
+                android:layout_weight="0.1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tam_100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/branco"
+            android:elevation="@dimen/tam_5dp"
+            android:layout_marginBottom="@dimen/margem_20dp">
+
+            <TextView
+                android:id="@+id/tvComentarioClienteEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_5dp"
+                android:paddingLeft="@dimen/tam_10dp"
+                android:paddingRight="@dimen/tam_10dp"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_comentario" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+

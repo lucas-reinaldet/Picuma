@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_margin="@dimen/margem_padrao_cadastro"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margem_20dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivDialogFotoEmpresaCadastroComentario"
+            android:layout_width="@dimen/tam_100dp"
+            android:layout_height="@dimen/tam_100dp"
+            android:layout_marginRight="@dimen/tam_10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvDialogNomeEmpresaCadastroComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tam_texto_16sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etDialogComentarioCadastro"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:hint="@string/comentario"
+        android:padding="@dimen/tam_10dp"
+        android:layout_marginTop="@dimen/margem_20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margem_20dp"
+        android:paddingTop="@dimen/margem_20dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btDialogCancelarCadastroComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_cancelar"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/margem_20dp"/>
+
+        <Button
+            android:id="@+id/btDialogCadastroComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_cadastrar"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/margem_20dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

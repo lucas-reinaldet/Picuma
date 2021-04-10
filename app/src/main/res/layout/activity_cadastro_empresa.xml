@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".view.CadastroEmpresaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="4">
+
+
+        <Button
+            android:id="@+id/btTopoCadastroEmpresaDados"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@color/verde_claro"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btTopoCadastroEmpresaContato"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@color/rose1"
+            android:enabled="false"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btTopoCadastroEmpresaHorario"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@color/rose1"
+            android:enabled="false"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btTopoCadastroEmpresaEndereco"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@color/rose1"
+            android:enabled="false"
+            android:text="4" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9.9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margem_padrao_cadastro"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCadastroEmpresaDados"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                        android:text="@string/nome_empresa_cadastro"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <EditText
+                        android:id="@+id/etNomeEmpresaCadastro"
+                        android:layout_width="@dimen/tam_edit_texto_cadastro"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbCnpjEmpresaCadastro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/cnpj_empresa_cadastro"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                        <RadioButton
+                            android:id="@+id/rbCpfEmpresaCadastro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                            android:text="@string/cpf_empresa_cadastro"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                        <EditText
+                            android:id="@+id/etCpfOuCnpjEmpresaCadastro"
+                            android:layout_width="@dimen/tam_edit_texto_cadastro"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                            android:inputType="number"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/area_atuacao_cadastro_empresa"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerAreaAtuacaoCadastroEmpresa"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/tam_5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/publico_alvo"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro"
+                        android:layout_marginTop="@dimen/margem_top_padrao_cadastro"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+                        <RadioButton
+                            android:id="@+id/rbUnissexCadastroEmpresa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/unissex"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFemininoCadastroEmpresa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/feminino"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbMasculinoCadastroEmpresa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/masculino"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/tvUsuarioCadastroEmpresa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margem_top_padrao"
+                        android:text="@string/usuario_cadastro"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <EditText
+                        android:id="@+id/etUsuarioCadastroEmpresa"
+                        android:layout_width="@dimen/tam_edit_texto_cadastro"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <TextView
+                        android:id="@+id/tvSenhaCadastroEmpresa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margem_top_padrao"
+                        android:text="@string/senha_cadastro"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <EditText
+                        android:id="@+id/etSenhaCadastroEmpresa"
+                        android:layout_width="@dimen/tam_edit_texto_cadastro"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <EditText
+                        android:id="@+id/etLoginGoogleCadastroEmpresa"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                        android:text="@string/logo_empresa_cadastro"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <ImageButton
+                        android:id="@+id/ibApresentacaoPreviaFotoEmpresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tam_padrao_height_imagem_perfil_empresa"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="5dp"
+                        android:elevation="30dp"
+                        android:maxWidth="@dimen/tam_max_padrao_width_imagem_perfil_empresa"
+                        android:src="@android:drawable/ic_menu_camera"
+                        android:scaleType="fitCenter"
+                        android:background="@color/branco_semi_transparente"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCadastroEmpresaContato"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btAdicionarContatoCadastroEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/adicionar_contato_cadastro"
+                    android:textAllCaps="false" />
+
+
+                <faculdade.br.picuma.util.NonScrollListView
+                    android:id="@+id/lvListaContatoCadastroEmpresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></faculdade.br.picuma.util.NonScrollListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCadastroEmpresaHorario"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbAtribuirHorarioGenericoATodosCadastroEmpresa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:checked="true"
+                            android:text="@string/atribuir_a_todos"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                        <RadioButton
+                            android:id="@+id/rbAtribuirHorarioIndividualmenteCadastroEmpresa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:checked="false"
+                            android:text="@string/atribuir_individualmente"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/llHorarioFuncionamentoGenericoCadastroEmpresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:text="@string/horario_cadastro_empresa"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:text="@string/expediente_cadastro"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/inicio"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <EditText
+                                android:id="@+id/etHorarioInicioExpedienteGenericoCadastroEmpresa"
+                                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                android:clickable="false"
+                                android:focusable="false" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fim"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <EditText
+                                android:id="@+id/etHorarioFimExpedienteGenericoCadastroEmpresa"
+                                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                android:clickable="false"
+                                android:focusable="false" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/intervalo_cadastro_empresa"
+                            android:textColor="@color/preto"
+                            android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/inicio"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <EditText
+                                android:id="@+id/etHorarioInicioIntervaloGenericoCadastroEmpresa"
+                                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                android:clickable="false"
+                                android:focusable="false" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fim"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <EditText
+                                android:id="@+id/etHorarioFimIntervaloGenericoCadastroEmpresa"
+                                android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                android:clickable="false"
+                                android:focusable="false" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cbAtribuirHorarioGenericoDomingoCadastroEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="D"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <CheckBox
+                                android:id="@+id/cbAtribuirHorarioGenericoSegundaCadastroEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="S"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <CheckBox
+                                android:id="@+id/cbAtribuirHorarioGenericoTercaCadastroEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="T"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+                            <CheckBox
+                                android:id="@+id/cbAtribuirHorarioGenericoQuartaCadastroEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Q"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <CheckBox
+                                android:id="@+id/cbAtribuirHorarioGenericoQuintaCadastroEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="Q"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+                            <CheckBox
+                                android:id="@+id/cbAtribuirHorarioGenericoSextaCadastroEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="S"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <CheckBox
+                                android:id="@+id/cbAtribuirHorarioGenericoSabadoCadastroEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="S"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llHorarioFuncionamentoIndividualCadastroEmpresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/cbHorarioSegundaCadastroEmpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/segunda_feira"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expediente_cadastro"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSegundaInicioExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSegundaFimExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/intervalo_cadastro_empresa"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSegundaInicioIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSegundaFimIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/cbHorarioTercaCadastroEmpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/terca_feira"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expediente_cadastro"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etTercaInicioExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etTercaFimExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/intervalo_cadastro_empresa"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etTercaInicioIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etTercaFimIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/cbHorarioQuartaCadastroEmpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/quarta_feira"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expediente_cadastro"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuartaInicioExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuartaFimExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/intervalo_cadastro_empresa"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuartaInicioIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuartaFimIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/cbHorarioQuintaCadastroEmpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/quinta_feira"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expediente_cadastro"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuintaInicioExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuintaFimExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/intervalo_cadastro_empresa"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuintaInicioIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etQuintaFimIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/cbHorarioSextaCadastroEmpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sexta_feira"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expediente_cadastro"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSextaInicioExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSextaFimExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/intervalo_cadastro_empresa"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSextaInicioIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSextaFimIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/cbHorarioSabadoCadastroEmpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sabado"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expediente_cadastro"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSabadoInicioExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSabadoFimExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/intervalo_cadastro_empresa"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSabadoInicioIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etSabadoFimIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/cbHorarioDomingoCadastroEmpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/domingo"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expediente_cadastro"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etDomingoInicioExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etDomingoFimExpedienteCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/intervalo_cadastro_empresa"
+                                android:textColor="@color/preto"
+                                android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/inicio"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etDomingoInicioIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fim"
+                                    android:textColor="@color/preto"
+                                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                                <EditText
+                                    android:id="@+id/etDomingoFimIntervaloCadastroEmpresa"
+                                    android:layout_width="@dimen/tam_edit_texto_cadastro_horario_empresa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margem_start_padrao_cadastro"
+                                    android:clickable="false"
+                                    android:focusable="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCadastroEmpresaEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cep_cadastro"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <EditText
+                        android:id="@+id/etCepCadastroEmpresa"
+                        android:layout_width="@dimen/tam_edit_texto_cadastro_cep"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/tam_5dp"
+                        android:text="@string/numero_cadastro"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <EditText
+                        android:id="@+id/etNumeroCadastroEmpresa"
+                        android:layout_width="@dimen/tam_edit_texto_cadastro_cep"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                    android:text="@string/logradouro_cadastro"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <EditText
+                    android:id="@+id/etLogradouroCadastroEmpresa"
+                    android:layout_width="@dimen/tam_edit_texto_cadastro"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                    android:text="@string/complemento_cadastro"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <EditText
+                    android:id="@+id/etComplementoCadastroEmpresa"
+                    android:layout_width="@dimen/tam_edit_texto_cadastro"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                    android:text="@string/bairro_cadastro"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <EditText
+                    android:id="@+id/etBairroCadastroEmpresa"
+                    android:layout_width="@dimen/tam_edit_texto_cadastro"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tam_10dp"
+                    android:layout_marginTop="@dimen/margem_top_padrao_cadastro"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cidade_cadastro"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <EditText
+                        android:id="@+id/etCidadeCadastroEmpresa"
+                        android:layout_width="@dimen/tam_edit_texto_cidade_cadastro"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+
+                    <EditText
+                        android:id="@+id/etEstadoCadastroEmpresa"
+                        android:layout_width="@dimen/tam_edit_texto_estado"
+                        android:layout_height="wrap_content"
+                        android:hint="UF"
+                        android:inputType="text"
+                        android:textAllCaps="true"
+                        android:textColor="@color/preto"
+                        android:textSize="@dimen/tam_padrao_text_cadastro" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tam_10dp"
+        android:layout_weight="0.1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btCancelarCadastroEmpresa"
+            android:layout_width="@dimen/tam_padrao_button"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margem_20dp"
+            android:text="@string/texto_button_cancelar"
+            android:textAllCaps="false"
+            android:textColor="@color/preto" />
+
+        <Button
+            android:id="@+id/btParaCadastrarEmpresa"
+            android:layout_width="@dimen/tam_padrao_button_cadastro"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margem_20dp"
+            android:text="@string/texto_button_proximo"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_perfil_empresa_funcionarios"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentPerfilEmpresaFuncionarios">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lvListaFuncionarioPerfilEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+        <ImageButton
+            android:id="@+id/ibAdicionarFuncionarioPerfilEmpresaFuncionarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_adicionar_funcionario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/branco_semi_transparente"
+            android:padding="@dimen/tam_10dp"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/tam_5dp"
+        android:layout_marginBottom="@dimen/tam_5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivListaFotoFuncionario"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/margem_20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/preto"
+                android:textSize="18sp"
+                android:paddingLeft="@dimen/tam_10dp"
+                android:text="@string/profissional"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvListaNomeFuncionario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/tam_10dp"
+                android:textSize="@dimen/tam_padrao_text_lista_simples"
+                android:textColor="@color/preto"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

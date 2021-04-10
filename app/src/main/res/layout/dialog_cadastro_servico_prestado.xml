@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margem_padrao_cadastro"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margem_20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grupo_servico"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerDialogGrupoServicoServicoPrestado"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"
+                android:paddingLeft="@dimen/tam_10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"
+                android:text="@string/escolha_servico"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerDialogServicoCadastroServicoPrestado"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"
+                android:paddingLeft="@dimen/tam_10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tempo_servico"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp" />
+
+                <EditText
+                    android:id="@+id/etDialogTempoServicoCadastroServicoPrestado"
+                    android:layout_width="@dimen/tam_70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tam_5dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tam_5dp"
+                    android:text="@string/min"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valor_a_partir"
+                    android:textColor="@color/preto"
+                    android:textSize="@dimen/tam_texto_16sp" />
+
+                <EditText
+                    android:id="@+id/etDialogValorServicoCadastroServicoPrestado"
+                    android:layout_width="@dimen/tam_70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tam_5dp"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tam_10dp"
+                android:text="@string/descricao_servico"
+                android:textColor="@color/preto"
+                android:textSize="@dimen/tam_texto_16sp" />
+
+            <EditText
+                android:id="@+id/etDialogDescricaoServicoCadastroServicoPrestado"
+                android:layout_width="@dimen/tam_300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="4" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btDialogAssFuncionarioCadastroServico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_button_associar_funcionario"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/tam_10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/tam_5dp">
+
+            <faculdade.br.picuma.util.NonScrollListView
+                android:id="@+id/lvDialogAssFuncionarioServicoCadastroServicoPrestado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></faculdade.br.picuma.util.NonScrollListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margem_20dp"
+            android:paddingTop="@dimen/margem_20dp">
+
+            <Button
+                android:id="@+id/btDialogCancelarCadastroServicoPrestado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margem_20dp"
+                android:text="@string/texto_button_cancelar"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/btDialogCadastroServicoPrestado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margem_20dp"
+                android:text="@string/texto_button_cadastrar"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
